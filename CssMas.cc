@@ -41,15 +41,15 @@
 .parte2{
 	width:80%;
 	float : left;
-	background-color: rgba(255,247,0,1.00); opacity: 0.8;
+	background-color: rgba(255,247,0,1.00); opacity: 0.95;
 	
 }
 .contenedor2{
 	width: 100%;
 	margin: 0px auto; 
 	max-width: 15000px;
-	background-color: rgba(255,255,255,1.00); opacity: 0.9;
-	height: 700px;
+	background-color: rgba(255,255,255,1.00); opacity: 0.95;
+	height: 900px;
 	
 }
 #boton1{
@@ -84,9 +84,37 @@
     text-align: center;
 	
 }
-#cuerpo{
+.slider{
 	width: 100%;
 	height: 400px;
+	margin: auto;
+	overflow: hidden;
+
+	
+	
+}
+.slider ul{
+	padding:0;
+	display: flex;
+	width: 200%;
+	animation-direction: alternate;
+	animation: cambio 10s infinite;
+}
+.slider li{
+	list-style: none;
+	widht:100%;
+}
+.slider img{
+
+}
+@keyframes cambio{
+	0%{margin-left:0;}
+	20%{margin-left:0;}
+	
+	25%{margin-left:-100%;}
+	45%{margin-left:-100%;}
+	
+	
 	
 }
 #pie{
